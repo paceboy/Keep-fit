@@ -1,0 +1,12 @@
+Global:
+    tool : build_submitter
+
+Default:
+    profile : [build]
+
+Profiles:
+    - profile:
+      name : build
+      env : CENTOS6U3
+      command : cd ../../../ && mkdir -p gopath/src/icode.baidu.com && mv baidu gopath/src/icode.baidu.com/ && cd gopath/src/icode.baidu.com/baidu/goodcoder/liushaogeng && make -f Makefile
+      release : True
