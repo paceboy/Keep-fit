@@ -4,3 +4,4 @@
 output
 .*.swp
 .*.swo
+.pyc
