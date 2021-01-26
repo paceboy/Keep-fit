@@ -1,5 +1,6 @@
 package com.goodcoder.train;
 
+import com.interview.list.List;
 import com.interview.solution.Solution;
 
 /**
@@ -11,6 +12,28 @@ public class Main {
     public static void main(String[] args) {
         Solution rotate = new Solution();
         System.out.println(rotate.rotate(1534236469));
+
+        List.Node node = new List.Node(1);
+        List.Node node1 = new List.Node(4);
+        List.Node node2 = new List.Node(6);
+        node1.setNext(node2);
+        node.setNext(node1);
+
+        List.Node node2_1 = new List.Node(2);
+        List.Node node2_2 = new List.Node(3);
+        List.Node node2_3 = new List.Node(5);
+        node2_2.setNext(node2_3);
+        node2_1.setNext(node2_2);
+
+        List list = new List();
+        // List.Node ret = list.merge(node, node2_1);
+        List.Node ret = list.mergeNoRec(node, node2_1);
+        // List.Node ret = list.MergeTwoOrderedLists(node, node2_1);
+
+        while(ret!=null){
+            System.out.printf("val = %d ", ret.getVal());
+            ret = ret.getNext();
+        }
         // System.out.println(rotate.rotate(1234567));
         // System.out.println(rotate.rotate(1230));
 
@@ -29,4 +52,5 @@ public class Main {
         //     e.printStackTrace();
         // }
     }
+
 }
