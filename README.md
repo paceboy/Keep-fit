@@ -11,8 +11,8 @@
 贡献patch流程、质量要求
 
 ## 讨论
-百度Hi讨论群：XXXX
+讨论群：XXXX
 
 ## 链接
-[百度golang代码库组织和引用指南](http://wiki.baidu.com/pages/viewpage.action?pageId=515622823)
+#[golang代码库组织和引用指南]
 
