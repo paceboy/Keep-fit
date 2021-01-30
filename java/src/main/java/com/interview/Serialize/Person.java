@@ -7,12 +7,6 @@ package com.interview.Serialize;
  */
 import java.io.Serializable;
 
-/**
- *
- * 测试序列化和反序列化
- * @author crazyandcoder
- * @date [2015-8-5 上午11:14:32]
- */
 public class Person  implements Serializable {
 
     private int age;

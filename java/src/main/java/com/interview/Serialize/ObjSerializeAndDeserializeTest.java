@@ -3,7 +3,7 @@ package com.interview.Serialize;
 /**
  * @author : liushaogeng
  * create at:  2021/1/30
- * @description:
+ * @description: java序列化和反序列化以及序列化ID的作用分析 https://blog.csdn.net/baidu_37107022/article/details/76860371?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.control
  */
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -11,12 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-/**
- *
- * 测试序列化和反序列化
- * @author crazyandcoder
- * @date [2015-8-5 上午11:16:14]
- */
+
 public class ObjSerializeAndDeserializeTest {
     private static final String file = "/Users/liushaogeng/baidu/test/hello.txt";
     public static void main(String[] args) {
@@ -32,12 +27,10 @@ public class ObjSerializeAndDeserializeTest {
 
     /**
      *
-     * @author crazyandcoder
      * @Title: 序列化Person对象，将其存储到 E:/hello.txt文件中
      * @param
      * @return void
      * @throws
-     * @date [2015-8-5 上午11:21:27]
      */
     private static void SerializePerson() {
         Person person =new Person();
@@ -63,12 +56,10 @@ public class ObjSerializeAndDeserializeTest {
 
     /**
      * 执行反序列化过程生产Person对象
-     * @author crazyandcoder
      * @Title: DeserializePerson
      * @param @return
      * @return Person
      * @throws
-     * @date [2015-8-5 下午1:30:12]
      */
     private static Person DeserializePerson() {
 
