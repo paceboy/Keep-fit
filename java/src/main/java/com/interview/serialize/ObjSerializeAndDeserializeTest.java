@@ -1,4 +1,4 @@
-package com.interview.Serialize;
+package com.interview.serialize;
 
 /**
  * @author : liushaogeng
@@ -22,7 +22,7 @@ public class ObjSerializeAndDeserializeTest {
         //反序列化生成Person对象
         Person person=DeserializePerson();
         // System.out.println("name :"+person.getName());
-        // System.out.println("age  :"+person.getAge());
+        System.out.println("age  :"+person.getAge());
     }
 
     /**
