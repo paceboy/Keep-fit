@@ -58,6 +58,15 @@ public class Main {
         // } catch (Exception e) {
         //     e.printStackTrace();
         // }
+
+        // 测试有效括号的字符
+        Solution solution = new Solution();
+        String s = "()";
+        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        s = "[()]";
+        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        s = "[[)]";
+        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
     }
 
 }
