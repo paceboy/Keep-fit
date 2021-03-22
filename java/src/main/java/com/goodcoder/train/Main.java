@@ -67,6 +67,8 @@ public class Main {
         System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
         s = "[[)]";
         System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        s = "{[()]}";
+        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
     }
 
 }

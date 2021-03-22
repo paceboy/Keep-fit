@@ -50,24 +50,28 @@ public class Solution {
     }
 
     /**
-     * 判断是否符合有效字符串
+     * 判断是否一对正确的括号
      *
      * @param
      * @return
      */
     public boolean isValidBracketGroup(char first, char second) {
-        if (second == ']') {
-            if (first == '[') {
-                return true;
-            }
-        } else if (second == ')') {
-            if (first == '(') {
-                return true;
-            }
-        } else {
-            if (first == '{') {
-                return true;
-            }
+        switch(second){
+            case ']':
+                if(first == '['){
+                    return true;
+                }
+                break;
+            case '}':
+                if(first == '{'){
+                    return true;
+                }
+                break;
+            case ')':
+                if(first == '('){
+                    return true;
+                }
+                break;
         }
         return false;
     }
