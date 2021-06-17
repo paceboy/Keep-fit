@@ -5,3 +5,10 @@ output
 .*.swp
 .*.swo
 .pyc
+.idea/
+Keep-fit.git/
+java/.idea/
+java/Keep-fit.git/
+java/target/
+java/traintickets.iml
+
