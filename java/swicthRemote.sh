@@ -5,4 +5,3 @@ remote=https://github.com/paceboy/Keep-fit.git
 
 #git clone --mirror $remote
 git remote set-url origin $remote
-

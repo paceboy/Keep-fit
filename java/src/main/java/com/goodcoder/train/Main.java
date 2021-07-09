@@ -1,8 +1,9 @@
 package com.goodcoder.train;
 
-import com.interview.list.List;
+import com.interview.solution.FirstBadVersion;
 import com.interview.solution.Solution;
 import com.interview.sort.QuickSort;
+import com.interview.valley.PeakIndex;
 
 /**
  * @author : liushaogeng
@@ -41,6 +42,7 @@ public class Main {
         quickSort.quickSort(a,0, a.length-1);
         quickSort.display(a);
 
+
         // System.out.println(rotate.rotate(1234567));
         // System.out.println(rotate.rotate(1230));
 
@@ -60,15 +62,25 @@ public class Main {
         // }
 
         // 测试有效括号的字符
-        Solution solution = new Solution();
-        String s = "()";
-        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
-        s = "[()]";
-        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
-        s = "[[)]";
-        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
-        s = "{[()]}";
-        System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        // Solution solution = new Solution();
+        // String s = "()";
+        // System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        // s = "[()]";
+        // System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        // s = "[[)]";
+        // System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        // s = "{[()]}";
+        // System.out.printf("s = %s, validBracket = %b\n", s, solution.validBrackets(s));
+        // PeakIndex peakIndex = new PeakIndex();
+        // System.out.printf("peakIndexInMountainArray = %d\n", peakIndex.peakIndexInMountainArray(new int[]{3,1,2}));
+        // Solution solution = new Solution();
+        // // System.out.printf("binarySearch target idx = %d \n", solution.binarySearch(new int[]{-1,0,3,5,9,12}, 9));
+        // System.out.printf("binarySearch target idx = %d \n", solution.binarySearch(new int[]{-1,0,3,5,9,12}, 12));
+        FirstBadVersion firstBadVersion = new FirstBadVersion();
+        firstBadVersion.setBadVersion(1);
+        System.out.printf("firstBadVersion = %d \n",firstBadVersion.firstBadVersion(1));
+        // firstBadVersion.setBadVersion(1);
+        // System.out.printf("firstBadVersion = %d \n",firstBadVersion.firstBadVersion(1));
     }
 
 }

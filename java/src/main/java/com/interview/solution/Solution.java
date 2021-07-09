@@ -3,6 +3,42 @@ package com.interview.solution;
 import java.util.Stack;
 
 public class Solution {
+
+    /**
+     * create by shaogeng at 2021/3/22 19:38
+     * description: 二分法查找
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int binarySearch(int[] nums, int target) {
+        int start, end, mid;
+        start = 0;
+        end = nums.length - 1;
+        if(nums.length < 3){
+            for(int i=0;i< nums.length;i++){
+                if(nums[i] == target){
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        while(start <= end){
+            mid = start + (end - start) / 2;
+            if (target == nums[mid]){
+                return mid;
+            }
+            if(target < nums[mid]){
+                end = mid - 1;
+            }else{
+                start = mid + 1;
+            }
+        }
+        return -1;
+    }
+
     public int rotate(int i) {
 
         int ret = 0;

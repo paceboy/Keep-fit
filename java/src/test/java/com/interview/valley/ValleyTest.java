@@ -28,7 +28,17 @@ public class ValleyTest {
     public void testPeakIndexInMountainArray() {
         try{
             // 测试
-            int idx = peakIndex.peakIndexInMountainArray(new int[]{2,5,4,2});
+            int idx = peakIndex.peakIndexInMountainArray(new int[]{1});
+            assertEquals(idx, 0);
+            // 测试
+            idx = peakIndex.peakIndexInMountainArray(new int[]{1,2});
+            assertEquals(idx, 0);
+            // 测试
+            idx = peakIndex.peakIndexInMountainArray(new int[]{3,1,2});
+            assertEquals(idx, 0);
+            // 测试
+            // 测试
+            idx = peakIndex.peakIndexInMountainArray(new int[]{2,5,4,2});
             assertEquals(idx, 1);
 
             // 测试
@@ -45,6 +55,26 @@ public class ValleyTest {
 
             // 测试
             idx = peakIndex.peakIndexInMountainArray(new int[]{0,2,1});
+            assertEquals(idx, 1);
+
+            // 测试
+            idx = peakIndex.peakIndexInMountainArrayByThree(new int[]{2,5,4,2});
+            assertEquals(idx, 1);
+
+            // 测试
+            idx = peakIndex.peakIndexInMountainArrayByThree(new int[]{2,5,4,2,1});
+            assertEquals(idx, 1);
+
+            // 测试
+            idx = peakIndex.peakIndexInMountainArrayByThree(new int[]{2,3,5,2,1});
+            assertEquals(idx, 2);
+
+            // 测试
+            idx = peakIndex.peakIndexInMountainArrayByThree(new int[]{0,2,3,5,2,1});
+            assertEquals(idx, 3);
+
+            // 测试
+            idx = peakIndex.peakIndexInMountainArrayByThree(new int[]{0,2,1});
             assertEquals(idx, 1);
 
         }catch(Exception e){
