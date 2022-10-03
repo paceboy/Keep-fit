@@ -1,6 +1,5 @@
-package com.interview.valley;
+package com.accumulation.valley;
 
-import com.goodcoder.train.TrainSeats;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

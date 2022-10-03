@@ -1,9 +1,7 @@
 package com.goodcoder.train;
 
-import com.interview.solution.FirstBadVersion;
-import com.interview.solution.Solution;
-import com.interview.sort.QuickSort;
-import com.interview.valley.PeakIndex;
+import com.accumulation.solution.FirstBadVersion;
+import com.accumulation.sort.QuickSort;
 
 /**
  * @author : liushaogeng

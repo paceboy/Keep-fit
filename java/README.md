@@ -14,7 +14,7 @@
 讨论群：XXXX
 
 链接
-#[golang代码库组织和引用指南]
+#
 
 Footer
 © 2022 GitHub, Inc.

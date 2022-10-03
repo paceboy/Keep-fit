@@ -1,4 +1,4 @@
-package com.interview.serialize;
+package com.accumulation.serialize;
 
 /**
  * @author : liushaogeng

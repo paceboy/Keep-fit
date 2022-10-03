@@ -1,4 +1,4 @@
-package com.interview.list;
+package com.accumulation.list;
 
 /**
  * @author : liushaogeng
