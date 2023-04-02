@@ -10,6 +10,8 @@
 #
 # 输入：points = [[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]
 # 输出：3
+# token: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
+
 from typing import List
 
 
