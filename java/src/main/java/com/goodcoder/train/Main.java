@@ -3,6 +3,7 @@ package com.goodcoder.train;
 import com.accumulation.solution.FirstBadVersion;
 import com.accumulation.sort.QuickSort;
 
+
 /**
  * @author : liushaogeng
  * create at:  2020/12/14

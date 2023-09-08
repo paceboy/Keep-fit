@@ -1,4 +1,4 @@
-package com.question.bank.algorithm.easy;
+package com.question.algorithm.easy;
 
 /**
  * @author liushaogeng

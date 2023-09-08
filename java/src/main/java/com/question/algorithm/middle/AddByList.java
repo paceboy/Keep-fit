@@ -1,4 +1,4 @@
-package com.question.bank.algorithm.middle;
+package com.question.algorithm.middle;
 
 /**
  * @author liushaogeng

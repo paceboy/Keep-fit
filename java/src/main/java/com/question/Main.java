@@ -1,7 +1,6 @@
-package com.question.bank;
+package com.question;
 
-import com.question.bank.algorithm.easy.ClimbStairs;
-import com.question.bank.algorithm.easy.ReformatNumber;
+import com.question.algorithm.easy.ClimbStairs;
 
 /**
  * @author liushaogeng

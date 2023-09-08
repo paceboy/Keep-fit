@@ -1,4 +1,4 @@
-package com.question.bank.db.easy;
+package com.question.db.easy;
 
 /**
  * @author liushaogeng
