@@ -11,13 +11,7 @@
 贡献patch流程、质量要求
 
 讨论
-讨论群：XXXX
+讨论群：
 
 链接
-#
 
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy

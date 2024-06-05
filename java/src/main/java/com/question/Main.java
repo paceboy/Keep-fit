@@ -1,6 +1,9 @@
 package com.question;
 
-import com.question.algorithm.easy.ClimbStairs;
+import com.accumulation.answer.BinaryTree;
+import com.accumulation.answer.BinaryTreeNode;
+
+import java.util.List;
 
 /**
  * @author liushaogeng
@@ -10,9 +13,33 @@ import com.question.algorithm.easy.ClimbStairs;
 public class Main {
     public static void main(String[] args) {
 
-        ClimbStairs climbStairs = new ClimbStairs();
-        int ret = climbStairs.solution(7);
-        System.out.printf("climbStairs ret = %d\n", ret);
+//        MinumPath minumPath = new MinumPath();
+//        int [][] grid = {{1,3,1},{1,5,1},{4,2,1}};
+//        System.out.println (minumPath.minPathSum(grid));
+//
+//        int [][] grid1 = {{1,2,3}, {4,5,6}};
+//        System.out.println (minumPath.minPathSum(grid1));
+
+        // 二叉树的按叶子结点往根节点的排序遍历
+        BinaryTree binaryTree = new BinaryTree();
+        BinaryTreeNode root ;
+//      Example root = [3,9,20,null,null,15,7]
+        BinaryTreeNode left = new BinaryTreeNode(9, null, null);
+        BinaryTreeNode right = new BinaryTreeNode(20 , new BinaryTreeNode(15), new BinaryTreeNode(7));
+        BinaryTreeNode node = new BinaryTreeNode(3, left, right);
+        root =  node;
+        List<List<Integer>> listOfLists = binaryTree.levelOrderBottomByYourself(root);
+        for(List<Integer> innerList : listOfLists) {
+            for(Integer number : innerList) {
+                System.out.print(number);
+                System.out.print(',');
+            }
+            System.out.println();
+        }
+
+//        ClimbStairs climbStairs = new ClimbStairs();
+//        int ret = climbStairs.solution(7);
+//        System.out.printf("climbStairs ret = %d\n", ret);
 
 //        String pn = "1-23-45 6";
 //        System.out.printf("formatNumber : pn = %s, formatNumber = %s", pn, ReformatNumber.formatNumber(pn));
